@@ -342,7 +342,7 @@ def notebook(preprocessor, tag, markup):
         print ("\n ** Writing styles to _nb_header.html: "
                "this should be included in the theme. **\n")
 
-        header = '\n'.join(CSS_WRAPPER.format(css_line)
+        header = u'\n'.join(CSS_WRAPPER.format(css_line)
                            for css_line in resources['inlining']['css'])
         header += JS_INCLUDE
 
